@@ -1,0 +1,223 @@
+/* ===== Reset defaults ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f7fc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+/* ===== Container ===== */
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* ===== Form Section ===== */
+.transaction-form {
+  margin-bottom: 30px;
+}
+
+.transaction-form h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+}
+
+button {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* ===== Summary Section ===== */
+.summary {
+  margin-bottom: 30px;
+  background: #f0f8ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.summary h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+#totalIncome {
+  color: green;
+  font-weight: bold;
+}
+
+#totalExpenses {
+  color: red;
+  font-weight: bold;
+}
+
+#netBalance {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* ===== Transactions List ===== */
+.transactions h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+#transactionList {
+  list-style: none;
+}
+
+#transactionList li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid;
+}
+
+#transactionList li.income {
+  border-color: green;
+}
+
+#transactionList li.expense {
+  border-color: red;
+}
+
+.transaction-details {
+  flex-grow: 1;
+}
+
+.transaction-amount {
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+/* ===== Edit Button ===== */
+.edit-btn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: darkorange;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+/* ===== Filter Section ===== */
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter h2 {
+  margin-bottom: 10px;
+}
+
+.filter select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Chart Section ===== */
+.chart-section {
+  margin: 30px 0;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}

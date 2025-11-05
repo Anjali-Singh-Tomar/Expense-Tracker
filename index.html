@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Expense Tracker</h1>
+    </header>
+
+    <!-- ===== Input Form ===== -->
+    <section class="transaction-form">
+      <h2>Add Transaction</h2>
+      <form id="transactionForm">
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" placeholder="e.g., Grocery shopping" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <select id="category" required>
+            <option value="">Select</option>
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Bills">Bills</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" placeholder="Enter amount" required>
+        </div>
+
+        <div class="form-group">
+          <label>Type:</label>
+          <input type="radio" name="type" value="income" required> Income
+          <input type="radio" name="type" value="expense" required> Expense
+        </div>
+
+        <button type="submit" id="submit-btn">Add Transaction</button>
+      </form>
+    </section>
+
+    <!-- ===== Summary Section ===== -->
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>Total Income: <span id="totalIncome">0</span></p>
+      <p>Total Expenses: <span id="totalExpenses">0</span></p>
+      <p>Net Balance: <span id="netBalance">0</span></p>
+    </section>
+
+    <!-- ===== Filter Section ===== -->
+    <section class="filter">
+      <h2>Filter by Category</h2>
+      <select id="filterCategory">
+        <option value="all">All</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Bills">Bills</option>
+        <option value="Other">Other</option>
+      </select>
+    </section>
+
+    <!-- ===== Chart Section ===== -->
+    <section class="chart-section">
+        <h2>Expense Distribution</h2>
+        <canvas id="expenseChart"></canvas>
+    </section>
+
+    <!-- ===== Transaction List ===== -->
+    <section class="transactions">
+      <h2>Transaction History</h2>
+      <ul id="transactionList">
+        <!-- Transactions will be displayed here dynamically -->
+      </ul>
+    </section>
+  </div>
+
+  <!-- Add Chart.js CDN before your script.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
