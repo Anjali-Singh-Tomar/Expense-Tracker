@@ -39,12 +39,12 @@ This project provides a **digital expense tracker** where users can record trans
 ---
 
 ##  Project Structure
-expense-tracker/
-│── index.html # Main HTML file
-│── style.css # Stylesheet
-│── script.js # JavaScript logic
-│── assets/ # Images, icons, screenshots
-│── README.md # Project documentation
+expense-tracker
+-> index.html # Main HTML file
+-> style.css # Stylesheet
+-> script.js # JavaScript logic
+-> assets/ # Images, icons, screenshots
+-> README.md # Project documentation
 
 
 ## 📢 Author
