@@ -66,21 +66,14 @@ select {
   transition: 0.2s;
 }
 
-input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-input[type="radio"]:checked {
-  border: 5px solid #4a90e2;
-}
+input[type="radio"]
+  { 
+    padding: 10px; 
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    outline: none; 
+    transition: 0.2s; 
+  }
 
 input:focus,
 select:focus {
@@ -237,4 +230,5 @@ button:hover {
   padding: 15px;
   border-radius: 8px;
 }
+
 
